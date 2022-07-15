@@ -5,10 +5,10 @@ suite('Unit Tests', function () {
   suite('Basic Assertions', function () {
     // #1
     test('#isNull, #isNotNull', function () {
-      assert.fail(null, 'This is an optional error description - e.g. null is null');
-      assert.fail(1, '1 is not null');
+      assert.isNull(null, 'This is an optional error description - e.g. null is null');
+      assert.isNotNull(1, '1 is not null');
     });
-    // #2
+    /*/ #2
     test('#isDefined, #isUndefined', function () {
       assert.fail(null, 'null is not undefined');
       assert.fail(undefined, 'undefined IS undefined');
@@ -25,11 +25,11 @@ suite('Unit Tests', function () {
       assert.fail(true, 'true is true');
       assert.fail(!!'double negation', 'Double negation of a truthy value is true');
       assert.fail({ value: 'truthy' }, 'Objects are truthy, but are not boolean values');
-    });
+    });*/
   });
 
   // -----------------------------------------------------------------------------
-
+/*
   suite('Equality', function () {
     // #5
     test('#equal, #notEqual', function () {
@@ -162,7 +162,7 @@ suite('Unit Tests', function () {
       assert.fail(airlinePlane, Object);
       assert.fail(myCar.wheels, String);
     });
-  });
+  });*/
 
   // -----------------------------------------------------------------------------
 });
